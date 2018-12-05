@@ -9,7 +9,7 @@ import net.dv8tion.jda.core.exceptions.InsufficientPermissionException;
 public class ChannelActionHandler {
 
     /**
-     * Locks a channel so the given roles cannot message in it
+     * Locks a channel so the given roles cannot send messages in it
      *
      * @param channel the channel
      * @param member  the self member
