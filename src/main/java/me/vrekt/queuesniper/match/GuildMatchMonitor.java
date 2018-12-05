@@ -81,8 +81,7 @@ public class GuildMatchMonitor implements MessageEventCallable {
     boolean isFinished() {
         return finished || System.currentTimeMillis() - now >= waitTime;
     }
-
-    @Override
+    
     public void messageReceived(TextChannel sentIn, Message message) {
 
         Member member = message.getMember();
