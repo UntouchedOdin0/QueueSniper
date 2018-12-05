@@ -26,7 +26,7 @@ public class TemporaryMessageEvent {
             TextChannel channel = event.getTextChannel();
             Guild guild = event.getGuild();
 
-            // make sure it was sent in the correct guild
+            // Make sure it was sent in the correct guild
             if (guild.getId().equals(guildId) && channel.getId().equals(textChannel)) {
                 callable.messageReceived(channel, event.getMessage());
             }
