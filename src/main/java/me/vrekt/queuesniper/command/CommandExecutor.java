@@ -65,7 +65,7 @@ public class CommandExecutor {
                 long time = System.currentTimeMillis() - lastExecuteTime;
                 if (time < execute.cooldown) {
                     MessageActionHandler.sendMessageToChannel(sentIn, "This command has a " + execute.cooldown / 1000 + " second " +
-                            "cool-down.");
+                            "cooldown.");
                     return;
                 } else {
                     history.remove(execute.name);
